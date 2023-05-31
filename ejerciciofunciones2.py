@@ -36,10 +36,18 @@ def menu_p():
 
 menu= True
 while menu:
-    op_general=menu_general()
-    if op_general == 1:
-
-        if op_platos == 1:
-        if op_platos == 2:
-        if op_platos == 3:
-        if op_platos == 4:
+    opc_general=menu_general()
+    if opc_general == 1:
+        opmenug = True
+        while opmenug:
+            opc_platos = menu_p()
+            if opc_platos == 1:
+                cant_cur = int(input("Cuantos desea comprar?\n"))
+            if opc_platos == 2:
+                cant_mar = int(input("Cuantos desea comprar?\n"))
+            if opc_platos == 3:
+                cant_chu = int(input("Cuantos desea comprar?\n"))
+            if opc_platos == 4:
+                cant_emp = int(input("Cuantos desea comprar?\n"))
+            if opc_platos == 5:
+                opmenug = False
